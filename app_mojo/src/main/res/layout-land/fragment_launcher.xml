@@ -43,11 +43,11 @@
                 android:background="@drawable/hl_card_welcome">
 
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@drawable/ic_hl_crown"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_hl_logo"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="HL Crown Logo" />
+                    android:contentDescription="HL Launcher Logo" />
 
                 <LinearLayout
                     android:layout_width="0dp"

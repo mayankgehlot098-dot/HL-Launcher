@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Hl luncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -159,3 +159,4 @@ mcl_indítás_letöltés_folyamatban"</string>
     <string name="preference_category_miscellaneous">Egyéb beállítások</string>
     <string name="controller_button_select">Kiválasztás</string>
 </resources>
+

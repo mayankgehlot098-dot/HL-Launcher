@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">پوجاو لانچر</string>
+    <string name="app_short_name">Hl luncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -251,3 +251,4 @@
     <string name="preference_category_miscellaneous">تنظیمات متفرقه</string>
     <string name="controller_button_select">انتخاب</string>
 </resources>
+

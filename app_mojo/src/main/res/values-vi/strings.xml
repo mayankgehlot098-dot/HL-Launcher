@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Hl luncher</string>
 
     <!-- Action bar part -->
 
@@ -430,3 +430,4 @@
     <string name="auth_select_local">Tài khoản nội bộ</string>
     <string name="instance_dir_missing">Thư mục instance bị thiếu</string>
 </resources>
+

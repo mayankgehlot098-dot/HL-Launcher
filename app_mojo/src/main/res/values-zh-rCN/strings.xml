@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Hl luncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -370,3 +370,4 @@
     <string name="local_login_bad_username_text">用户名长度必须在 3–16 个字符之间，并且只能包含拉丁字母、数字 0–9 和下划线。</string>
     <string name="quick_setting_title">快速设置</string>
 </resources>
+

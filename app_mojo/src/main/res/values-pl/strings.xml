@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Hl luncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -371,3 +371,4 @@
     <string name="local_login_bad_username_text">Nazwa użytkownika musi posiadać od 3 do 16 znaków, i musi zawierać tylko latyńskie litery, numery od 0 do 9 oraz podkreślenia.</string>
     <string name="quick_setting_title">Szybkie ustawienia</string>
 </resources>
+

@@ -24,13 +24,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Crown Logo Icon -->
+        <!-- Custom HL Logo Icon -->
         <ImageView
             android:id="@+id/hl_logo_icon"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/ic_hl_crown"
-            android:layout_marginEnd="6dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_hl_logo"
+            android:layout_marginEnd="8dp"
             android:contentDescription="HL Launcher Logo" />
 
         <!-- HL Launcher Brand Text -->
@@ -44,7 +44,7 @@
                 android:id="@+id/hl_brand_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="HL Launcher"
+                android:text="@string/app_short_name"
                 android:textColor="#FFFFFF"
                 android:textSize="13sp"
                 android:textStyle="bold"

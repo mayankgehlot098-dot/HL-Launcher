@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">HL Launcher</string>
+    <string name="app_short_name">Hl luncher</string>
     <string name="app_tagline">GAME KHALO WITH HEET</string>
 
     <!-- Action bar part -->
@@ -568,3 +568,4 @@
     <string name="clean_partfiles_wait">Clearing download cache…</string>
     <string name="warn_auth_type_missing">%s is not available, using local account</string>
 </resources>
+
