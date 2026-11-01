@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HL Launcher: Sidebar full background with subtle gradient -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Deep dark base -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#120E20" />
+        </shape>
+    </item>
+    <!-- Subtle purple top glow -->
+    <item android:bottom="0dp" android:top="0dp" android:left="0dp" android:right="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#1AB060FF"
+                android:endColor="#00000000"
+                android:angle="270"
+                android:type="linear" />
+        </shape>
+    </item>
+    <!-- Right border line -->
+    <item android:left="0dp" android:right="0dp" android:top="0dp" android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="1dp" android:color="#33B060FF" />
+        </shape>
+    </item>
+</layer-list>

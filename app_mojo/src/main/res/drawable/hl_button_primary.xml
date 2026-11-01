@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HL Launcher: Primary purple glow button -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#CC8B3FD9" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+            <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="-4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#44B060FF" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- Normal state -->
+    <item>
+        <layer-list>
+            <!-- Glow shadow -->
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="-4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#44B060FF" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+            <!-- Button body gradient -->
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:startColor="#8B3FD9"
+                        android:endColor="#B060FF"
+                        android:angle="135"
+                        android:type="linear" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+            <!-- Top highlight -->
+            <item android:bottom="24dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#22FFFFFF" />
+                    <corners android:topLeftRadius="12dp" android:topRightRadius="12dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

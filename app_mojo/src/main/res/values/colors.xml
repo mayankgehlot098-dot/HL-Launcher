@@ -1,18 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ── Existing functional colors (PRESERVED) ── -->
     <color name="control_button_color">#4CC4C4C4</color>
     <color name="control_button_pressed_color">#4D000000</color>
-
-    <color name="minebutton_color">#91dffb</color>
-    <color name="minebutton_secondary">#2a2a2a</color>
-    <color name="background_app">#181818</color>
+    <color name="minebutton_color">#B060FF</color>
+    <color name="minebutton_secondary">#1A0D2E</color>
     <color name="divider">@color/background_overlay</color>
-    <color name="background_overlay">#464646</color>
-    <color name="background_status_bar">#242424</color>
-    <color name="background_bottom_bar">#232323</color>
+    <color name="background_overlay">#3D1A5C</color>
     <color name="icon_outline_color">#FFFFFF</color>
-
     <color name="primary_text">#FFFFFF</color>
-    <color name="secondary_text">#B2B2B2</color>
+    <color name="secondary_text">#C0A8E8</color>
+
+    <!-- ── HL Launcher Core Palette ── -->
+    <!-- Backgrounds -->
+    <color name="background_app">#0D0A14</color>
+    <color name="background_status_bar">#0D0A14</color>
+    <color name="background_bottom_bar">#110D1C</color>
+    <color name="hl_bg_deep">#0D0A14</color>
+    <color name="hl_bg_surface">#16102A</color>
+    <color name="hl_bg_card">#1E1535</color>
+    <color name="hl_bg_card_elevated">#261C42</color>
+
+    <!-- Purple Accent Scale -->
+    <color name="hl_purple_bright">#B060FF</color>
+    <color name="hl_purple_primary">#8B3FD9</color>
+    <color name="hl_purple_dark">#5C2A99</color>
+    <color name="hl_purple_glow">#CC8BFF</color>
+    <color name="hl_violet">#7B2FBE</color>
+
+    <!-- Glassmorphism surfaces (alpha) -->
+    <color name="hl_glass_surface">#331E1535</color>
+    <color name="hl_glass_border">#55B060FF</color>
+    <color name="hl_glass_border_dim">#33B060FF</color>
+    <color name="hl_glass_highlight">#1AFFFFFF</color>
+
+    <!-- Fire accent colors (sidebar fire effect) -->
+    <color name="hl_fire_red">#FF3D1A</color>
+    <color name="hl_fire_orange">#FF7A00</color>
+    <color name="hl_fire_blue">#1A8FFF</color>
+    <color name="hl_fire_cyan">#00D4FF</color>
+
+    <!-- Play button -->
+    <color name="hl_play_start">#8B3FD9</color>
+    <color name="hl_play_end">#B060FF</color>
+    <color name="hl_play_glow">#66B060FF</color>
+
+    <!-- Status / state colors -->
+    <color name="hl_success">#4ADE80</color>
+    <color name="hl_warning">#FBBF24</color>
+    <color name="hl_error">#F87171</color>
+
+    <!-- Sidebar -->
+    <color name="hl_sidebar_bg">#120E20</color>
+    <color name="hl_sidebar_item_selected">#2A1855</color>
+    <color name="hl_sidebar_item_hover">#1E1440</color>
+    <color name="hl_sidebar_icon_active">#B060FF</color>
+    <color name="hl_sidebar_icon_inactive">#7A6B9A</color>
+    <color name="hl_sidebar_text_active">#FFFFFF</color>
+    <color name="hl_sidebar_text_inactive">#9980CC</color>
+
+    <!-- Nav bar indicator -->
+    <color name="hl_nav_indicator">#B060FF</color>
 
 </resources>

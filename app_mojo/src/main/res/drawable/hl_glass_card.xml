@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HL Launcher: Glassmorphism card background -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Glass fill -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#261E1535" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <!-- Luminous purple border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="1dp" android:color="#55B060FF" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <!-- Top highlight shimmer -->
+    <item android:bottom="14dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#0DFFFFFF" />
+            <corners android:topLeftRadius="14dp" android:topRightRadius="14dp" />
+        </shape>
+    </item>
+</layer-list>
