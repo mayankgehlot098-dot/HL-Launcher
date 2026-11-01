@@ -16,9 +16,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/padding_moderate"
+        android:textColor="@color/hl_text_primary"
+        android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Quick settings"
         tools:visibility="visible" />
@@ -26,35 +27,34 @@
         android:id="@+id/side_dialog_title_divider"
         style="@style/ThickDivider"
         android:layout_width="match_parent"
+        android:background="@color/hl_glass_border_dim"
         android:paddingHorizontal="@dimen/padding_moderate"
         android:visibility="gone"
-
-        tools:visibility="visible"
-        />
+        tools:visibility="visible" />
     <com.kdt.DefocusableScrollView
         android:id="@+id/side_dialog_scrollview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        tools:background="@color/background_status_bar">
+        android:background="@android:color/transparent">
         <!-- The content is inflated here -->
     </com.kdt.DefocusableScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="4dp">
         <Button
             android:id="@+id/side_dialog_start_button"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:textColor="@color/hl_text_secondary"
             android:visibility="gone"
-
             tools:visibility="visible"
-            tools:text="Cancel"
-            />
+            tools:text="Cancel" />
 
         <Button
             android:id="@+id/side_dialog_end_button"
@@ -62,8 +62,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:textColor="@color/hl_purple_glow"
+            android:textStyle="bold"
             android:visibility="gone"
-
             tools:text="Confirm"
             tools:visibility="visible"
             tools:ignore="RelativeOverlap" />
