@@ -62,4 +62,8 @@
     <!-- Nav bar indicator -->
     <color name="hl_nav_indicator">#B060FF</color>
 
+    <!-- Text colors -->
+    <color name="hl_text_primary">#FFFFFF</color>
+    <color name="hl_text_secondary">#C0A8E8</color>
+    <color name="hl_text_dim">#8070A0</color>
 </resources>
