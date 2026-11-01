@@ -1,6 +1,39 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HL Launcher: Glowing purple PLAY button background -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/mine_button_focused" />
-    <item android:state_enabled="false" android:drawable="@drawable/mine_button_focused" />
-    <item android:drawable="@drawable/mine_button_unfocused" />
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#6815B8"
+                android:endColor="#8A32DF"
+                android:type="linear" />
+            <corners android:radius="14dp" />
+            <stroke android:width="2dp" android:color="#FFD494FF" />
+            <padding android:left="16dp" android:top="12dp" android:right="16dp" android:bottom="12dp" />
+        </shape>
+    </item>
+    <!-- Disabled state -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#2A243A" />
+            <corners android:radius="14dp" />
+            <stroke android:width="1dp" android:color="#444455" />
+            <padding android:left="16dp" android:top="12dp" android:right="16dp" android:bottom="12dp" />
+        </shape>
+    </item>
+    <!-- Normal state -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#7B22D4"
+                android:endColor="#B060FF"
+                android:type="linear" />
+            <corners android:radius="14dp" />
+            <stroke android:width="1.5dp" android:color="#AAEA75FF" />
+            <padding android:left="16dp" android:top="12dp" android:right="16dp" android:bottom="12dp" />
+        </shape>
+    </item>
 </selector>

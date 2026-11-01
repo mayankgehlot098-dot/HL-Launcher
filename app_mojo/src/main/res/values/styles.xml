@@ -55,11 +55,14 @@
     </style>
 
     <style name="LauncherMenuButton" parent="Widget.AppCompat.Button">
-        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/hl_action_button_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <style name="LauncherMenuButton.Universal" parent="LauncherMenuButton">
-        <item name="android:layout_height">@dimen/_66sdp</item>
+        <item name="android:layout_height">@dimen/_54sdp</item>
+        <item name="android:layout_marginHorizontal">4dp</item>
+        <item name="android:layout_marginVertical">4dp</item>
     </style>
 
     <style name="ThickDivider">
@@ -79,21 +82,29 @@
     <!-- HL Launcher Glassmorphism Design System     -->
     <!-- ═══════════════════════════════════════════ -->
 
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HL Launcher Glassmorphism Design System     -->
+    <!-- ═══════════════════════════════════════════ -->
+
+    <!-- Base HL style to satisfy AAPT dot-notation inheritance -->
+    <style name="HL" />
+    <style name="HL.Button" parent="HL" />
+
     <!-- Glass card panel -->
-    <style name="HL.GlassCard">
+    <style name="HL.GlassCard" parent="HL">
         <item name="android:background">@drawable/hl_glass_card</item>
         <item name="android:padding">12dp</item>
         <item name="android:elevation">4dp</item>
     </style>
 
     <!-- Elevated glass card -->
-    <style name="HL.GlassCard.Elevated">
+    <style name="HL.GlassCard.Elevated" parent="HL.GlassCard">
         <item name="android:background">@drawable/hl_glass_card_elevated</item>
         <item name="android:elevation">8dp</item>
     </style>
 
     <!-- HL primary button (purple gradient glow) -->
-    <style name="HL.Button.Primary">
+    <style name="HL.Button.Primary" parent="HL.Button">
         <item name="android:background">@drawable/hl_button_primary</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textAllCaps">true</item>
@@ -104,7 +115,7 @@
     </style>
 
     <!-- Sidebar navigation item -->
-    <style name="HL.NavItem">
+    <style name="HL.NavItem" parent="HL">
         <item name="android:background">@drawable/hl_nav_item_bg</item>
         <item name="android:paddingStart">12dp</item>
         <item name="android:paddingEnd">8dp</item>
@@ -115,14 +126,14 @@
     </style>
 
     <!-- Sidebar nav item text -->
-    <style name="HL.NavItem.Text">
+    <style name="HL.NavItem.Text" parent="HL.NavItem">
         <item name="android:textColor">@color/hl_sidebar_text_inactive</item>
         <item name="android:textSize">13sp</item>
         <item name="android:layout_marginStart">10dp</item>
     </style>
 
     <!-- Section header in sidebar -->
-    <style name="HL.SectionLabel">
+    <style name="HL.SectionLabel" parent="HL">
         <item name="android:textColor">@color/hl_purple_glow</item>
         <item name="android:textSize">9sp</item>
         <item name="android:textAllCaps">true</item>
@@ -133,7 +144,7 @@
     </style>
 
     <!-- HL tagline text -->
-    <style name="HL.Tagline">
+    <style name="HL.Tagline" parent="HL">
         <item name="android:textColor">@color/hl_purple_glow</item>
         <item name="android:textSize">9sp</item>
         <item name="android:textAllCaps">true</item>
@@ -142,14 +153,14 @@
     </style>
 
     <!-- HL title text -->
-    <style name="HL.Title">
+    <style name="HL.Title" parent="HL">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Status badge chip -->
-    <style name="HL.Badge">
+    <style name="HL.Badge" parent="HL">
         <item name="android:background">@drawable/hl_badge_bg</item>
         <item name="android:textColor">@color/hl_purple_glow</item>
         <item name="android:textSize">10sp</item>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HL Launcher: Top bar background with dark purple glass tint and subtle border -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:startColor="#F00D091A"
+                android:centerColor="#F0130C26"
+                android:endColor="#F0180F33"
+                android:type="linear" />
+        </shape>
+    </item>
+    <!-- Bottom accent line -->
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:height="1dp" />
+            <solid android:color="#33B060FF" />
+        </shape>
+    </item>
+</layer-list>

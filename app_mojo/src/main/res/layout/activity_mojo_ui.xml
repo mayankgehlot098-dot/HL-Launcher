@@ -1,54 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HL Launcher: Main launcher UI — account header + fragment host + progress -->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/transparent">
+    android:background="@color/hl_bg_deep">
 
-    <com.kdt.mcgui.AccountSpinner
-        android:id="@+id/account_spinner"
+    <!-- ══════════════════════════════════════════════════════ -->
+    <!--  HL LAUNCHER TOP BAR                                   -->
+    <!-- ══════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/hl_top_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_52sdp"
-
-        android:dropDownWidth="@dimen/_250sdp"
-        android:dropDownVerticalOffset="@dimen/_52sdp"
-        android:paddingEnd="@dimen/_52sdp"
-
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="4dp"
+        android:background="@drawable/hl_topbar_bg"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlSymmetry" />
-    <!-- Ignore because it's  done to fit the ImageButton within spinner background -->
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <ImageButton
-        android:id="@+id/setting_button"
-        android:layout_width="@dimen/_52sdp"
-        android:layout_height="@dimen/_52sdp"
-        android:background="?attr/selectableItemBackground"
-        android:src="@drawable/ic_px_sliders"
-        android:scaleType="fitCenter"
-        android:paddingVertical="@dimen/_8sdp"
+        <!-- Crown Logo Icon -->
+        <ImageView
+            android:id="@+id/hl_logo_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_hl_crown"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="HL Launcher Logo" />
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <!-- HL Launcher Brand Text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <!-- Holding most of the dynamic content -->
+            <TextView
+                android:id="@+id/hl_brand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HL Launcher"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:id="@+id/hl_brand_tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_tagline"
+                android:textColor="@color/hl_purple_glow"
+                android:textSize="7sp"
+                android:textAllCaps="true"
+                android:letterSpacing="0.18"
+                android:alpha="0.9" />
+        </LinearLayout>
+
+        <!-- Account Spinner (PRESERVED — original ID) -->
+        <com.kdt.mcgui.AccountSpinner
+            android:id="@+id/account_spinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_weight="1.4"
+            android:dropDownWidth="@dimen/_250sdp"
+            android:dropDownVerticalOffset="@dimen/_52sdp"
+            android:paddingEnd="@dimen/_52sdp"
+            tools:ignore="RtlSymmetry" />
+
+        <!-- Settings Button (PRESERVED — original ID) -->
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_px_sliders"
+            android:scaleType="fitCenter"
+            android:paddingVertical="@dimen/_8sdp"
+            android:tint="@color/hl_purple_glow"
+            app:tint="@color/hl_purple_glow"
+            android:contentDescription="Settings" />
+    </LinearLayout>
+
+    <!-- ══════════════════════════════════════════════════════ -->
+    <!--  FRAGMENT CONTAINER (PRESERVED — original ID)          -->
+    <!-- ══════════════════════════════════════════════════════ -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/container_fragment"
         android:name="git.artdeell.mojo.fragments.MainMenuFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/progress_layout"
-        app:layout_constraintTop_toBottomOf="@+id/account_spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/hl_top_bar" />
 
-
+    <!-- ══════════════════════════════════════════════════════ -->
+    <!--  PROGRESS BAR (PRESERVED — original ID)               -->
+    <!-- ══════════════════════════════════════════════════════ -->
     <com.kdt.mcgui.ProgressLayout
         android:id="@+id/progress_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
